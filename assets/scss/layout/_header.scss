@@ -1,0 +1,50 @@
+.header {
+  color: $white-font-color;
+
+  .container {
+    @include mobile {
+      max-width: 100%;
+      flex-direction: column;
+      padding: 16px 0px 0px 0px;
+    }
+  }
+
+  .logo {
+    width: 20%;
+
+    img {
+      @include size(80px, 48.57px);
+    }
+
+    @include mobile {
+      width: 100%;
+      padding-left: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  .menu {
+    gap: 64px;
+    .menu-item {
+      @include mobile {
+        width: 50%;
+        border: 1px solid #ffffff;
+        text-align: center;
+        padding: 1em 2em;
+      }
+
+      a {
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+
+    @include mobile {
+      font-size: $font-size-base;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 0rem;
+    }
+  }
+}

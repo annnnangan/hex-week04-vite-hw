@@ -1,0 +1,15 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin btn($padding-top-bottom, $padding-left-right, $bg-color, $font-color) {
+  padding: $padding-top-bottom $padding-left-right;
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+@mixin hover {
+  transform: translate(0, -5px);
+  transition: 0.3s;
+}

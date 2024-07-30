@@ -1,0 +1,16 @@
+@import "./helpers/mixin";
+@import "./helpers/variable";
+@import "./layout/grid";
+@import "./base/reset";
+@import "./base/base";
+
+@import "./helpers/background";
+
+@import "./helpers/flex";
+@import "./helpers/spacing";
+@import "./helpers/text";
+
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+@import "./pages/index.scss";
