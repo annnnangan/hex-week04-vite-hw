@@ -3,13 +3,28 @@
   height: $height;
 }
 
-@mixin btn($padding-top-bottom, $padding-left-right, $bg-color, $font-color) {
+@mixin linkHover {
+  transform: translate(0, -5px);
+  transition: 0.3s;
+}
+
+@mixin btnHover {
+  filter: brightness(120%);
+  transition: 0.3s;
+}
+
+@mixin btn(
+  $padding-top-bottom,
+  $padding-left-right,
+  $bg-color,
+  $font-color,
+  $font-size
+) {
   padding: $padding-top-bottom $padding-left-right;
   background-color: $bg-color;
   color: $font-color;
-}
-
-@mixin hover {
-  transform: translate(0, -5px);
+  font-size: $font-size;
+  border: 0px;
   transition: 0.3s;
+  cursor: pointer;
 }

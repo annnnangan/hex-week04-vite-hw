@@ -13,6 +13,10 @@
     padding-right: 12px;
   }
 
+  .top {
+    padding-bottom: 32px;
+  }
+
   .menu-items {
     gap: 48px;
     padding-top: 10px;
@@ -24,8 +28,6 @@
   }
 
   .contact {
-    padding-bottom: 32px;
-
     a,
     i {
       @include mobile-large {

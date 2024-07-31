@@ -34,6 +34,6 @@ a {
   display: inline-block;
   transition: 0.3s;
   &:hover {
-    @include hover;
+    @include linkHover;
   }
 }
