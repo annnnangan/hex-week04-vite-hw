@@ -234,3 +234,84 @@
     }
   }
 }
+
+.contact-us-form {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .form-container {
+    max-width: 804px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    @include tablet {
+      max-width: 600px;
+    }
+
+    @include mobile {
+      max-width: 372px;
+    }
+  }
+
+  .section-title {
+    padding-bottom: 48px;
+  }
+
+  .description {
+    padding-bottom: 24px;
+  }
+
+  .input {
+    padding-bottom: 18px;
+
+    label:not([for="tnc"]) {
+      display: block;
+      padding-bottom: 8px;
+    }
+
+    input:not([type="checkbox"], [type="submit"]),
+    textarea {
+      width: 100%;
+      padding: 6px 0px 6px 12px;
+      border: 1px solid #000000;
+
+      &::placeholder {
+        opacity: 0.2;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+  }
+
+  .tnc {
+    padding-bottom: 48px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    @include mobile {
+      align-items: flex-start;
+    }
+
+    input[for="checkbox"] {
+      display: inline-block;
+    }
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    @include btn(16px, 136px, $primary-color, $white-font-color, 16px);
+
+    &:hover {
+      @include btnHover;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
