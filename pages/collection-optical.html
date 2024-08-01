@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%> <%-
+    include('./layout/collection-category-header'); -%>
+
+    <div class="category-banners">
+      <picture class="banner">
+        <source
+          srcset="../assets/images/product-header-sm-1.png"
+          media="(max-width: 768px)"
+        />
+        <img src="../assets/images/product-header-1.png" alt="product image" />
+      </picture>
+      <picture class="banner">
+        <source
+          srcset="../assets/images/product-header-sm-2.png"
+          media="(max-width: 768px)"
+        />
+        <img src="../assets/images/product-header-2.png" alt="product image" />
+      </picture>
+    </div>
+
+    <div class="products optical">
+      <div class="container">
+        <h2 class="category-title eng-font">Celluloid Combi</h2>
+        <h3 class="category-subtitle">賽璐珞鈦金屬混合鏡框</h3>
+
+        <div class="row">
+          <!-- render inside main.js -->
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/pagination'); -%> <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
