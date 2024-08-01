@@ -1,5 +1,3 @@
-import "./assets/scss/all.scss";
-
 // Collections Page
 const category = document.querySelectorAll(
   ".collection-category-header .category"
@@ -169,3 +167,5 @@ if (locationContainer) {
           </div>`;
   }
 }
+
+import "./assets/scss/all.scss";

@@ -27,7 +27,12 @@ export default defineConfig({
   // base: '/Repository 的名稱/'
   base: "/hex-week04-vite-hw/",
   plugins: [
-    liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),
+    liveReload([
+      "./layout/**/*.ejs",
+      "./pages/**/*.ejs",
+      "./pages/**/*.html",
+      "*.js",
+    ]),
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
