@@ -27,12 +27,7 @@ export default defineConfig({
   // base: '/Repository 的名稱/'
   base: "/hex-week04-vite-hw/",
   plugins: [
-    liveReload([
-      "./layout/**/*.ejs",
-      "./pages/**/*.ejs",
-      "./pages/**/*.html",
-      "*.js",
-    ]),
+    liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
@@ -45,6 +40,17 @@ export default defineConfig({
       input: Object.fromEntries(
         glob
           .sync("pages/**/*.html")
+          .map((file) => [
+            path.relative(
+              "pages",
+              file.slice(0, file.length - path.extname(file).length)
+            ),
+            fileURLToPath(new URL(file, import.meta.url)),
+          ])
+      ),
+      input: Object.fromEntries(
+        glob
+          .sync("*.js")
           .map((file) => [
             path.relative(
               "pages",
