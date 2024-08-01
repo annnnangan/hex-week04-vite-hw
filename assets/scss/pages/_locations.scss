@@ -1,0 +1,67 @@
+.page-title {
+  padding-top: 96px;
+  padding-bottom: 33px;
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    padding-left: 16px;
+    border-left: 8px solid #9f1213;
+  }
+}
+
+.filter {
+  padding-bottom: 40px;
+  label {
+    font-size: 24px;
+    padding-right: 16px;
+  }
+  select#location {
+    padding: 6px 238px 6px 12px;
+    border: 1px solid #ced4da;
+    color: rgba(73, 80, 87, 0.75);
+    font-size: 18px;
+  }
+}
+
+.location-list {
+  padding-bottom: 80px;
+  font-size: 20px;
+  .row {
+    gap: 48px 0px;
+    @include mobile {
+      gap: 24px 0px;
+    }
+  }
+  .card {
+    .location-name {
+      padding-left: 24px;
+      font-size: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border: 1px solid #00000020;
+    }
+
+    .location-contact {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 24px;
+      padding-left: 24px;
+      border: 1px solid #00000020;
+      gap: 8px;
+
+      .material-icons-outlined {
+        padding-right: 11px;
+      }
+    }
+
+    .button {
+      font-size: 19px;
+      background-color: #000000;
+      color: white;
+      display: block;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      text-align: center;
+    }
+  }
+}
