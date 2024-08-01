@@ -10,10 +10,13 @@
   }
 
   .logo {
-    width: 20%;
-
-    img {
-      @include size(80px, 48.57px);
+    a {
+      background-image: url("/assets/images/logo-white.png");
+      background-position: center;
+      background-size: cover;
+      width: 80px;
+      height: 48.57px;
+      @include hide-text;
     }
 
     @include mobile {
