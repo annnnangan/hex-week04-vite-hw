@@ -59,7 +59,6 @@ if (opticalProductContainer) {
 }
 
 //Render sunglasses product images
-
 if (sunglassesProductContainer) {
   for (let i = 0; i < sunglassesProductImages; i++) {
     sunglassesProductContainer.innerHTML += `<div class="column col-4 col-md-6 col-sm-12">
