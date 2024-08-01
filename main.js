@@ -36,7 +36,9 @@ if (opticalProductContainer) {
                 <div class="card">
                   <a href="#">
                   <img
-                    src="../assets/images/product-${i + 1}.png"
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-${
+                      i + 1
+                    }.png?raw=true"
                     alt="product BJ41600S"
                   />
   
@@ -64,7 +66,9 @@ if (sunglassesProductContainer) {
                 <div class="card">
                   <a href="#">
                   <img
-                    src="../assets/images/product-${i + 7}.png"
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-${
+                      i + 7
+                    }.png?raw=true"
                     alt="product BJ41600S"
                   />
     
@@ -124,9 +128,9 @@ if (locationContainer) {
   for (let i = 0; i < storeInfo.length; i++) {
     locationContainer.innerHTML += `<div class="column col-4 col-md-6 col-sm-12 d-flex">
             <div class="card">
-              <img src="../assets/images/store-${i + 1}.png" alt="${
-      storeInfo[i].name
-    }" />
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-${
+                i + 1
+              }.png?raw=true" alt="${storeInfo[i].name}" />
               <div class="store-details">
                 <p class="location-name">${storeInfo[i].name}</p>
                 <ul class="location-contact d-flex flex-column">

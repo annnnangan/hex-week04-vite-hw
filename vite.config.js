@@ -39,7 +39,7 @@ export default defineConfig({
     rollupOptions: {
       input: Object.fromEntries(
         glob
-          .sync("(pages/**/*.html|.js)")
+          .sync("pages/**/*.html")
           .map((file) => [
             path.relative(
               "pages",
