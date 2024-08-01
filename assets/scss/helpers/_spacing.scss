@@ -4,6 +4,42 @@
   }
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.column {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+// 4 items in a .row
+.col-3 {
+  width: 25%;
+}
+
+// 3 items in a .row
+.col-4 {
+  width: 33.33%;
+}
+
+// 2 items in a .row
+.col-md-6 {
+  @include tablet {
+    width: 50%;
+  }
+}
+
+// 1 item in a .row
+.col-sm-12 {
+  @include mobile {
+    width: 100%;
+  }
+}
+
 .pt {
   &-1 {
     padding-top: $spacing;
